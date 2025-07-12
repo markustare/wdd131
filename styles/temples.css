@@ -1,0 +1,84 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background: #0077b6;
+  color: white;
+  padding: 1rem;
+}
+
+.header-container {
+  font-family: 'Concert One', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+#menuBtn {
+  display: block;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.navigation {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.navigation.open {
+  display: flex;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+  text-align: right;
+}
+
+.navigation a:hover {
+  background-color: #023e8a;
+}
+
+/* Main Content */
+main {
+  max-width: 100%;
+  padding: 1rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+figure {
+  margin: 0;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  background: #0077b6;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}

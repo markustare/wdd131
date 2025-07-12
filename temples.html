@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temple Album</title>
+    <meta name="description" content="A picture album for temples I visited or within the proximity of my location."/>
+    <meta name="author" content="Mark Kenneth Laqui Ustare"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css" />
+    <link rel="stylesheet" href="styles/temples-large.css" />
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Temple Album</h1>
+            <button id="menuBtn" aria-label="Menu">&#9776;</button>
+            <nav class="navigation">
+                <a href="#">Home</a>
+                <a href="#">Old</a>
+                <a href="#">New</a>
+                <a href="#">Large</a>
+                <a href="#">Small</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2>Temples Around Asia and Middle East</h2>
+        <section class="gallery">
+            <figure>
+                <img src="images/manila_philippines_temple.jpeg" alt="Manila, Philippines">
+                <figcaption>Manila, Philippines</figcaption>
+            </figure>
+            <figure>
+                <img src="images/cebu-philippines-temple.jpg" alt="Cebu, Philippines">
+                <figcaption>Cebu, Philippines</figcaption>
+            </figure>
+            <figure>
+                <img src="images/tokyo_japan_temple.jpeg" alt="Tokyo, Japan">
+                <figcaption>Tokyo, Japan</figcaption>
+            </figure>
+            <figure>
+                <img src="images/hong_kong_china_temple.jpeg" alt="Hong Kong, China">
+                <figcaption>Hong Kong, China</figcaption>
+            </figure>      
+            <figure>
+                <img src="images/rome_italy_temple.jpeg" alt="Rome, Italy">
+                <figcaption>Rome, Italy</figcaption>
+            </figure>
+            <figure>
+                <img src="images/urdaneta_philippines_temple.jpeg" alt="Urdaneta, Philippines">
+                <figcaption>Urdaneta, Philippines</figcaption>
+            </figure>
+            <figure>
+                <img src="images/dubai_temple.jpeg" alt="Dubai, United Arab Emirates">
+                <figcaption>Dubai, United Arab Emirates</figcaption>
+            </figure>
+            <figure>
+                <img src="images/kyiv_ukraine_temple.jpeg" alt="Kyiv, Ukraine">
+                <figcaption>Kyiv, Ukraine</figcaption>
+            </figure>
+            <figure>
+                <img src="images/bangkok_thailand_temple.jpeg" alt="Bangkok, Thailand">
+                <figcaption>Bangkok, Thailand</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | Mark Kenneth Laqui Ustare | Abu Dhabi</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
