@@ -54,8 +54,9 @@ header {
 
 /* Main Content */
 main {
-  max-width: 100%;
+  max-width: 60%;
   padding: 1rem;
+  margin: 0 auto;
 }
 
 .gallery {
@@ -67,12 +68,23 @@ main {
 figure {
   margin: 0;
   text-align: center;
+  overflow: hidden;
+  background: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 img {
   width: 100%;
-  height: auto;
-  border-radius: 8px;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+figcaption {
+  padding: 0.5rem;
+  background-color: white;
 }
 
 /* Footer */
