@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore Abu Dhabi</title>
+    <meta name="description" content="A simple page about Abu Dhabi, United Arab Emirates" />
+    <meta name="author" content="Mark Kenneth Laqui Ustare" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Noto+Naskh+Arabic:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css" />
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>United Arab Emirates</h1>
+        <h1>الإمارات العربية المتحدة</h1>
+    </header>
+
+    <main>
+        <section class="hero-section">
+        <picture>
+            <source srcset="images/abu-hero-large.webp" media="(min-width: 600px)">
+            <img src="images/abu-hero-small.webp" alt="Sheikh Zayed Grand Mosque" />
+        </picture>
+
+        <section class="card data-card">
+            <h2>Data</h2>
+            <ul>
+            <li><span class="label">Country</span><span class="value">United Arab Emirates</span></li>
+            <li><span class="label">Capital City</span><span class="value">Abu Dhabi</span></li>
+            <li><span class="label">Official Language</span><span class="value">Arabic</span></li>
+            <li><span class="label">Currency</span><span class="value">UAE Dirham (AED)</span></li>
+            <li><span class="label">Population</span><span class="value">~1.5 million (city)</span></li>
+            <li><span class="label">Area</span><span class="value">972 km²</span></li>
+            </ul>
+        </section>
+
+        <section class="card weather-card">
+            <h2>Weather <span class="weather-icon"></span></h2>
+            <img class="weather-img" src="images/sun.svg" alt="Sunny Icon" />
+            <ul>
+            <li><span class="label">Temperature</span><span id="temperature">42°C</span></li>
+            <li><span class="label">Wind Speed</span><span id="windSpeed">12km/h</span></li>
+            <li><span class="label">Wind Chill</span><span id="windChill">Calculating...</span></li>
+            </ul>
+        </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | Mark Kenneth Laqui Ustare | Abu Dhabi, UAE</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
