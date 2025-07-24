@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lazy Image Demonstration</title>
+    <meta name="author" content="Mark Kenneth Laqui Ustare" />
+    <link rel="stylesheet" href="styles/lazyload.css" />
+    <script src="scripts/lazyload.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Lazy Load Demonstration</h1>
+    </header>
+    <main>
+        <picture>
+            <img src="https://placecats.com/400/600" alt="Placeholder Kitten Image" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://placecats.com/400/650" alt="Placeholder Kitten Image" loading="lazy" width="400" height="700">
+        </picture>
+        <picture>
+            <img src="https://placecats.com/400/700" alt="Placeholder Kitten Image" loading="lazy" width="400" height="650">
+        </picture>
+        <picture>
+            <img src="https://placecats.com/400/800" alt="Placeholder Kitten Image" loading="lazy" width="400" height="750">
+        </picture>
+        <picture>
+            <img src="https://placecats.com/400/750" alt="Placeholder Kitten Image" loading="lazy" width="400" height="800">
+        </picture>
+        <picture>
+            <img src="https://placecats.com/400/850" alt="Placeholder Kitten Image" loading="lazy" width="400" height="850">
+        </picture>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Mark Kenneth Laqui Ustare | Abu Dhabi, UAE</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
