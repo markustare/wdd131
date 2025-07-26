@@ -115,7 +115,7 @@ function renderTemples(templeArray) {
 
     const name = document.createElement("figcaption");
     name.innerHTML = `
-    <strong>${temple.templeName}</strong><br>
+    <span class="temple-name"><strong>${temple.templeName}</strong><br></span>
     <span class="label">Location:</span> ${temple.location}<br>
     <span class="label">Dedicated:</span> ${temple.dedicated}<br>
     <span class="label">Area:</span> ${temple.area.toLocaleString()} sq ft

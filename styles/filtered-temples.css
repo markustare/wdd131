@@ -93,14 +93,19 @@ img {
 }
 figcaption {
   padding: 0.5rem;
-  font-size: 1rem;
+  font-size: 0.90rem;
   background-color: white;
 }
 .label {
   text-transform: uppercase;
-  font-size: 0.75rem;
+  font-size: 0.70rem;
   font-weight: bold;
-  letter-spacing: -0.1px;
+  letter-spacing: -0.5px;
+}
+.temple-name {
+  font-family: 'Concert One', serif;
+  font-size: 1.5rem;
+  font-style: italic;
 }
 /* Footer */
 footer {
