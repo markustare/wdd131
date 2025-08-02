@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Review Form</title>
+    <meta name="description" content="Product Review Form" />
+    <meta name="author" content="Mark Kenneth Laqui Ustare" />
+    <link rel="stylesheet" href="styles/form.css" />
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+  <!-- Header Section -->
+    <header class="page-header">
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html">
+        <!-- Product Name -->
+        <div class="form-group">
+            <label for="productName">Product Name:</label>
+            <select id="productName" name="productName" required>
+            <option value="" disabled selected>Select a Product ...</option>
+            <!-- Dynamically populated options -->
+            </select>
+        </div>
+
+        <!-- Overall Rating -->
+        <fieldset class="form-group">
+            <legend>Overall Rating:</legend>
+            <div class="rating-stars">
+            <label><span>☆</span><input type="radio" name="rating" value="1" required></label>
+            <label><span>☆☆</span><input type="radio" name="rating" value="2"></label>
+            <label><span>☆☆☆</span><input type="radio" name="rating" value="3"></label>
+            <label><span>☆☆☆☆</span><input type="radio" name="rating" value="4"></label>
+            <label><span>☆☆☆☆☆</span><input type="radio" name="rating" value="5"></label>
+            </div>
+        </fieldset>
+
+        <!-- Date of Installation -->
+        <div class="form-group">
+            <label for="installDate">Date Installed:</label>
+            <input type="date" id="installDate" name="installDate" required />
+        </div>
+
+        <!-- Useful Features -->
+        <fieldset class="form-group">
+            <legend>Which features did you find usefule in the product? <br><span class="instruction">(Check all that apply):</span></legend>
+            <div class="checkbox-column">
+            <label><input type="checkbox" name="features" value="Durability"> Durability</label>
+            <label><input type="checkbox" name="features" value="Ease of Use"> Ease of Use</label>          
+            <label><input type="checkbox" name="features" value="Design"> Design</label>
+            <label><input type="checkbox" name="features" value="Performance"> Performance</label>
+            </div>
+        </fieldset>
+
+        <!-- Written Review -->
+        <div class="form-group">
+            <label for="reviewText">Written Review <span class="optional">(Optional)</span>:</label>
+            <textarea id="reviewText" name="reviewText"></textarea>
+        </div>
+
+        <!-- User Name -->
+        <div class="form-group">
+            <label for="userName">Your Name <span class="optional">(Optional)</span>:</label>
+            <input type="text" id="userName" name="userName" />
+        </div>
+
+        <input type="submit" value="Submit Review" />
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Mark Laqui Kenneth Ustare | Abu Dhabi</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
