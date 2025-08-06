@@ -2,17 +2,17 @@
 body {
     margin: 0;
     font-family: 'Noto Sans', sans-serif;
-    background-color: white;
+    background-color: rgb(223, 218, 231);
 }
 
 main {
     max-width: 600px;
     margin: 1rem auto;
     padding: 1.5rem;
-    background-color: rgb(223, 218, 231);
-    border: 1px solid rgb(223, 218, 231);
+    background-color: white;
+    border: 1px solid whitesmoke;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.30);
 }
 
 /* Header and Footer */
@@ -89,7 +89,7 @@ input[type="submit"]:hover {
 /* Optional Label Styling */
 .optional {
     font-size: 0.85rem;
-    color: #007bff;
+    color: darkblue;
     font-weight: normal;
 }
 
