@@ -1,0 +1,505 @@
+:root {
+  --brand: #004d37; /* Legacy Green */
+  --bg: #fff8f0; /* Warm Light Cream */
+  --text: black;
+  --muted: #302f2f;
+  --radius: 12px;
+  --container: 1100px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+        sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.5;
+}
+
+article h1, aside h1, nav h1, section h1 {
+    font-size: 2rem;
+}
+
+.container {
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.skip {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 0.5rem;
+    background: #fff;
+    left: 0.5rem;
+    top: 0.5rem;
+    z-index: 9999;
+    border: 2px solid var(--brand);
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.site-header {
+    background-color: var(--brand);
+    color: #fff;
+    padding: 0.5rem 1rem;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: var(--container);
+    margin: 0 auto;
+}
+
+.brand a {
+    color: white;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+.nav-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0.25rem;
+    color: white;
+}
+
+.nav-toggle .hamburger, .nav-toggle .hamburger::before, .nav-toggle .hamburger::after {
+    display: block;
+    background-color: white;
+    height: 3px;
+    width: 28px;
+    border-radius: 4px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-toggle .hamburger::before, .nav-toggle .hamburger::after {
+    content: '';
+    position: absolute;
+}
+
+.nav-toggle .hamburger::before {
+    top: -9px;
+    left: 0;
+}
+
+.nav-toggle .hamburger::after {
+    top: 9px;
+    left: 0;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav li {
+    margin: 0.75rem 0;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.main-nav a:hover, .main-nav a:focus {
+    text-decoration: underline;
+}
+
+.hero {
+    position: relative;
+    color: var(--brand);
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+}
+
+.hero picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--radius);
+    box-shadow: 0 6px 10px rgb(0 0 0 / 0.1);
+}
+
+.hero-inner {
+    position: static;
+    background: rgba(255 255 255 / 0.9);
+    padding: 1rem 1.5rem;
+    border-radius: var(--radius);
+    max-width: 100%;
+    margin: 0.5rem auto 0 auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    font-size: 1rem;
+    text-align: center;
+}
+
+.lede {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    font-weight: 600;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--brand);
+    color: white;
+    padding: 0.75rem 1.75rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover, .btn:focus {
+    background-color: #004735;
+}
+
+.btn-secondary {
+    background-color: #ccc;
+    color: #333;
+}
+
+.btn-secondary:hover, .btn-secondary:focus {
+    background-color: #999;
+}
+
+.features {
+    margin-bottom: 3rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.card {
+    background: white;
+    border-radius: var(--radius);
+    box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+    padding: 1rem;
+    text-align: center;
+}
+
+.card picture img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+    margin-bottom: 0.75rem;
+}
+
+.how ol {
+    padding-left: 1.5rem;
+}
+
+.testimonials-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.testimonials-list li {
+    margin-bottom: 1rem;
+    font-style: italic;
+    border-left: 4px solid var(--brand);
+    padding-left: 1rem;
+    background: white;
+    border-radius: var(--radius);
+    box-shadow: 0 2px 6px rgb(0 0 0 / 0.05);
+}
+
+.site-footer {
+    background-color: var(--brand);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.site-footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+.site-footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.site-footer nav ul li {
+    margin: 0;
+}
+
+/* Navigation desktop hidden by default */
+.main-nav {
+    display: none;
+}
+
+/* Show nav horizontally on desktop */
+@media (min-width: 768px) {
+  .nav-toggle {
+      display: none;
+  }
+  .main-nav {
+      display: block;
+  }
+  .main-nav ul {
+      display: flex;
+      gap: 1.5rem;
+  }
+  .main-nav li {
+      margin: 0;
+  }
+  .main-nav a {
+      color: white;
+      font-weight: 700;
+  }
+  .hero {
+      padding-bottom: 3rem;
+  }
+  .hero-inner {
+      position: absolute;
+      top: 70%;
+      left: 30%;
+      transform: translate(-50%, -50%);
+      background: rgba(255 255 255 / 0.85);
+      padding: 2rem;
+      border-radius: 0 0 var(--radius) var(--radius);
+      max-width: 600px;
+      margin: 0 auto;
+      box-shadow: 0 6px 18px rgba(10,10,10,0.06);
+      font-size: 1.3rem;
+      text-align: center;
+  }
+  .lede {
+      font-size: 1.3rem;
+  }
+  .cards {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Show nav when toggled */
+.main-nav.show {
+    display: block;
+    background-color: var(--brand);
+    padding: 1rem;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    border-bottom-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+}
+
+/* --- Team carousel styles --- */
+
+.team-carousel {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: white;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.7s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+    opacity: 0.5;
+    filter: blur(2px);
+    transition: opacity 0.4s, filter 0.3s;
+}
+
+.carousel-item.active {
+    opacity: 1;
+    filter: blur(0);
+}
+
+.carousel-item img {
+    width: 25%;
+    height: auto;
+    object-fit: cover;
+    max-height: 400px;
+    border-radius: 10px;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 95%;
+    transform: translateY(-50%);
+    background: var(--brand);
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+
+.carousel-btn:hover {
+    background: rgba(0,0,0,0.8);
+}
+/* Booking form container box */
+#bookingForm {
+    background: white;
+    border-radius: var(--radius);
+    padding: 1.5rem 2rem;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+    box-sizing: border-box;
+}
+
+/* Make form a single column layout */
+#bookingForm fieldset {
+    border: none;
+    margin: 0 0 1.5rem 0;
+    padding: 0;
+}
+
+/* Labels on top */
+#bookingForm label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--brand);
+}
+#bookingForm legend {
+    font-weight: 900;
+    font-size: larger;
+}
+
+/* Inputs full width, stacked */
+#bookingForm input[type="text"], #bookingForm input[type="email"], #bookingForm input[type="tel"], #bookingForm input[type="date"], #bookingForm select, #bookingForm textarea {
+    width: 100%;
+    padding: 0.6rem 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+#bookingForm input[type="text"]:focus, #bookingForm input[type="email"]:focus, #bookingForm input[type="tel"]:focus, #bookingForm input[type="date"]:focus, #bookingForm select:focus, #bookingForm textarea:focus {
+    border-color: var(--brand);
+    outline: none;
+}
+
+/* Textarea specific */
+#bookingForm textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Buttons in a column on mobile, side-by-side on larger screens */
+.form-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.form-actions button {
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.75rem;
+    border-radius: var(--radius);
+    cursor: pointer;
+    border: none;
+}
+
+.form-actions .btn {
+    background-color: var(--brand);
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.form-actions .btn:hover, .form-actions .btn:focus {
+    background-color: #003322;
+}
+
+.form-actions .btn-secondary {
+    background-color: #eee;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.form-actions .btn-secondary:hover, .form-actions .btn-secondary:focus {
+    background-color: #ddd;
+}
+
+/* On wider screens, buttons side by side */
+@media (min-width: 500px) {
+  .form-actions {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .form-actions button {
+    flex: 1;
+  }
+}
+
+/* Responsive margin around form for small screens */
+@media (max-width: 400px) {
+  #bookingForm {
+    padding: 1rem;
+    margin: 0 0.5rem 2rem 0.5rem;
+  }
+}
